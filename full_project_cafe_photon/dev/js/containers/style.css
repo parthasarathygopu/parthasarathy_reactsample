@@ -1,0 +1,53 @@
+.header{
+    padding: 20px;
+    background-color: black;
+    color:white;
+    letter-spacing: 9px;
+    font-family:fantasy;
+    font-size: 40px;
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+.bgColor{
+    background-color: rgb(12, 138, 170);
+}
+.marginLogin{
+    margin-left: 45%;
+    margin-bottom: 30px;
+}
+.marginPhone{
+    margin-left: 38%;
+    margin-bottom: 30px;
+}
+.marginName{
+    margin-left: 38%;
+    margin-bottom: 30px;
+}
+.marginLoginBtn{
+    margin-left: 47%;
+    margin-bottom: 50px;
+    border:none;
+    background-color: black;
+    color:white;
+    font-size:15px;
+    width:100px;
+    height:30px;
+}
+.phoneInput{
+    margin-left: 7%;
+}
+.nameInput{
+    margin-left: 13.5%;
+}
+.itemImage{
+    height: 200px;
+    width:200px;
+}
+underlineRemove{
+    text-decoration: none;
+}
