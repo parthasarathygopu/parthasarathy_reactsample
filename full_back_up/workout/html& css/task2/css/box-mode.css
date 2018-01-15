@@ -1,0 +1,8 @@
+.box-model-image
+{
+        padding:20px;
+	width: 500px;
+	height:300px;
+	border  : 15px solid yellow;
+	margin: 25px 10px 15px 5px;
+}

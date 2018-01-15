@@ -1,0 +1,8 @@
+[
+         {"code":"16106","name":"Samsung Electronics Co.,LTD","reviewer":"Betsy","reviewed_date":"12-11-2017","reviewscore":"5","status":"Reviewed"},
+        {"code":"16107","name":"JPMorgan Chase Bank, N.A.","reviewer":"Kiran","reviewed_date":"31-01-2017","reviewscore":"4","status": "Pending"},
+        {"code":"16108","name":"Loreal Paris Global","reviewer":"Partha","reviewed_date":"02-11-2017","reviewscore":"3","status": "Reviewed"},
+        {"code":"16109","name":"walgrence, N.A.","reviewer":"Saranya","reviewed_date":"15-07-2016","reviewscore":"2.6","status": "Pending"},
+        {"code":"16110","name":"keybank","reviewer":"Mohan","reviewed_date":"19-06-2015","reviewscore":"2.2","status": "Reviewed"}
+        
+        ]

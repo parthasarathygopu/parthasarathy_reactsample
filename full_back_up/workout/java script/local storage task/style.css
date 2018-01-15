@@ -1,0 +1,14 @@
+h1
+{
+	text-align: center;
+	color:red;
+}
+.content
+{
+	color:blue;
+	margin-left: 50px;
+}
+body
+{
+	background-color: yellow;
+}

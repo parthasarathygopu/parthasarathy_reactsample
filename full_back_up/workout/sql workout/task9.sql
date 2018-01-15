@@ -1,0 +1,1 @@
+select AccountNumber, OrderDate, TotalDue,RN = ROW_NUMBER()over (partition by [AccountNumber]order by[Accountnumber])  from Sales.SalesOrderHeader;

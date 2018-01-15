@@ -1,0 +1,36 @@
+<div class="home-page">
+	<div class="total">
+<div class="header">
+<div class="lefticon"></div><div class ="righticon"></div>
+</div>
+<div class="option">
+	<div class="a"><input type="button" class="d" value="Home"></div><div class="b"><input type="button" class="d" value="Products"></div><div class="c"><input type="button" class="d" value="How Do I"></div>
+</div>
+<br>
+<div class="content">
+<div class ="wordings">
+<div class="e">
+				<button id= "z"> next update duration </button></div>	
+				</div>
+<div class = "login">
+<p>Personal banking</p><input type="button" class="f" value="Continue to login"></div>
+<br>
+<div class ="security">
+<div class="g"></div><div class="h"></div><div class="i"></div><div class="j"></div></div>
+<br>
+<div class = "solution">
+	<div class="s"></div>
+</div>
+<div class = "display">
+<div>project name:</div><div id="project-name-value">{{projectName}}</div>
+		<div>project code:</div><div id="project-code-value">{{projectId}}</div>
+		<br>
+		{{#each surplusMembers}}
+			<div>firstname:{{firstName}}</div>
+			<div>employeeId:{{employeeId}}</div>
+			<br>
+		{{/each}}
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+var aaa="";
+function myFunction() 
+{
+var a=document.getElementById('expression').value;
+var expr=a.split("");
+  var b=expr.length;
+  var s=[];
+  var flag = 0;
+  if(b==1 || b==0 ||expr[0]==')' || expr[b]=='(')
+  {
+       document.getElementById('demo').innerHTML="unbalance";
+  }
+  else
+  {
+  for (var i=0; i<b; i++)
+    {
+        if (expr[i]=='(')
+        {
+            s.push(expr[i]);
+        }
+        else
+        {
+            if (s.length==0)
+            {
+                document.getElementById('demo').innerHTML="unbalance";
+                flag=1;
+                break;
+            }
+            else
+            {
+                s.pop();
+            }
+            
+        }
+    }
+    if (s.length==0 && flag!=1)
+        document.getElementById('demo').innerHTML="balance";
+    else
+        document.getElementById('demo').innerHTML="unbalance";
+   }
+}
+
+</script>
+<label>Enter expression</label>
+<input type="text" id="expression" value="">
+<button onclick="myFunction()">submit</button>
+<p id="demo"></p>
+</body>
+</html>

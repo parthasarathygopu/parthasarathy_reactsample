@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Login Page </h1>
+<div class ="content">
+<div>
+<label>User Name: </label>
+<input id="username" type="text"/>
+</div>
+<br>
+<div>
+<label>Password: </label>
+<input id="password" type="password"/>
+</div>
+<br>
+<div>
+<input type="button" value="Login" onclick="login()"/>
+<input type="button" value="Sign Up" onclick= "document.location.href= 'signup.html'";/>
+</div>
+</div>
+<script>
+function login()
+{
+var data=localStorage.getItem("userdetails");
+var parseddata=JSON.parse(data);
+var user=document.getElementById("username").value;
+var pass=document.getElementById("password").value;
+if(user=='' || pass=='')
+{
+	alert("please enter the details");
+}
+else
+{
+	
+	if(parseddata[user]==pass)
+	{
+	alert("successfully Logged  ");
+	location.href = 'home.html';
+    }
+    else
+    {
+    	alert("user does not found");
+	}
+	
+}
+}
+</script>
+</body>
+</html>

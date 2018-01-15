@@ -1,0 +1,76 @@
+div
+{
+	margin-bottom:15px;
+}
+.checkbox-terms
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.button {
+  background-color: #423C3C;
+  border: none;
+  font-size: 15px;
+  color:white;
+  text-align: center;
+  padding:6px;
+  width:312px;
+  height:30px;
+  font-family: Calibri;
+}
+h1
+{
+	width:312px;
+	font-family: Calibri;
+	font-size: 23px;
+	font-weight: 400;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #AEADAD;
+}
+input[type=checkbox]{
+	 -webkit-appearance: initial;
+	 border: 2.3px solid black;
+	 border-radius:20%;
+	 width: 16px;
+     height: 18px;
+     vertical-align:top;   
+}
+input[type=checkbox]:checked:after {
+  content: " \2714";
+  position: absolute;
+    color: black;
+}
+input[type=radio] {
+       -webkit-appearance: none;
+       width: 17px;
+       height: 17px;
+       border-radius: 50%;
+       outline: none;
+       border: 2.3px solid black;
+       vertical-align:top;
+   }
+input[type=radio]:checked {
+  background-color:blue;
+}
+input[type=text]{
+	height:25px;
+	border-color:black;
+	border-width: 1px;
+}
+input[type=submit]
+{
+     text-transform: uppercase;
+}
+body{
+
+	margin: auto;
+    width: 25%;
+
+}
+label
+{
+	font-family: Calibri;
+	font-color:black;
+	font-weight: 600px;
+	font-size: 18px;
+}

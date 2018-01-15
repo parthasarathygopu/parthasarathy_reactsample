@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+function myFunction() 
+{
+  var expr=['(','8','+','(','2','*','3',')','*','(','5','-','2',')',')'];
+  document.getElementById('expression').value=expr;
+  var values=[];
+  var ops=[];
+  var b=expr.length;
+  if (expr[0]=="+" || expr[0]=="-" || expr[0]=="*" || expr[0]=="/"|| expr[0]==")"||expr[b-1]=="(" || b<3)
+  {
+     document.getElementById('demo').innerHTML="invalid expression";
+  }
+  else
+  {
+        for (var i = 0; i < b; i++)
+         {
+            if (expr[i] >= '0' && expr[i] <= '9')
+            {
+                values.push(expr[i]);
+            }
+            else if (expr[i] == '(')
+            {
+                ops.push(expr[i]);
+            }
+            else if (expr[i] == ')')
+            {
+                var c=ops.length;
+                c=c-1;
+                var ops_top_parenthesis=ops[c];
+                while (ops_top_parenthesis != '(')
+                {
+                  values.push(calculation(ops.pop(), values.pop(), values.pop()));
+                  c=c-1;
+                  ops_top_parenthesis=ops[c];
+                }
+                ops.pop();
+            }
+            else if (expr[i] == '+' || expr[i] == '-' ||
+                     expr[i] == '*' || expr[i] == '/')
+            {
+                var a=ops.length;
+                var ops_top=ops[a-1];
+                while (ops.length!=0 && hasPrecedence(expr[i], ops_top))
+                {
+                  values.push(calculation(ops.pop(), values.pop(), values.pop()));
+                 }
+                ops.push(expr[i]);
+            }
+        }
+       while (ops.length!=0)
+       {
+            values.push(calculation(ops.pop(), values.pop(), values.pop()));
+       }
+         document.getElementById('demo').innerHTML=values;
+    }
+}
+function hasPrecedence( op1,  op2)
+{
+        if (op2 == '(' || op2 == ')')
+        {
+            return false;
+        }
+        else if ((op1 == '*' || op1 == '/') && (op2 == '+' || op2 == '-'))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+}
+function calculation( op,  b,  a)
+{
+        a=parseInt(a);
+        b=parseInt(b);
+        switch (op)
+        {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+        }
+        return 0;
+}
+
+</script>
+<label>static expression is </label>
+<input type="text" id="expression" value="">
+<button onclick="myFunction()">submit</button>
+<p id="demo"></p>
+</body>
+</html>
+
+

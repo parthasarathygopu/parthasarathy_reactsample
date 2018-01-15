@@ -1,0 +1,21 @@
+{
+      "JsonObject":
+      {
+          "name":"partha",
+    "age":22,
+    "cars":"Ford"
+    },
+	"Number": 2,
+	"String": "hai",
+	"JsonArray": 
+	{
+    "driving_accurancy":99.5,
+    "cars": 
+    [
+        { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+        { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+        { "name":"Fiat", "models":[ "500", "Panda" ] }
+    ]
+
+}
+}

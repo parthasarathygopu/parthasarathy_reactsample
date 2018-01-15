@@ -1,0 +1,1 @@
+Select ProductID, Name, Color From Production.Product Order by case Color when 'Red' then 0 else 1 end ;

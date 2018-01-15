@@ -1,0 +1,1 @@
+Select BusinessEntityID as EmployeeID, VacationHours as Vacation,SickLeaveHours as SickTime from HumanResources.Employee

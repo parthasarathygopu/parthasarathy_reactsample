@@ -1,0 +1,39 @@
+
+#sachin-intro
+{
+     color: pink;
+  }   
+  h
+  {
+      color:Green;
+      font-size:20px;
+  }
+header
+{
+    font-weight: bold;
+	background-color: #0078c0;
+	padding: 15px;
+	text-align: center;
+	color:Red;
+	font-size:30px;
+}
+.image-sachin
+{
+     padding:10px;
+     margin  :auto;
+   border  : 5px solid yellow;
+   background-image:url("1.jpg");
+   width:600px;
+   height:300px;
+}
+.table-content
+{
+   margin  :auto;
+   text-align: center;
+    width:200px;
+     border  : 5px solid red;
+}
+.content
+{
+    color:grey;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Sign Up Page </h1>
+<div class ="content">
+<div>
+<label>User Name: </label>
+<input id="username" type="text"/>
+</div>
+<br>
+<div>
+<label>Password: </label>
+<input id="password" type="password"/>
+</div>
+<br>
+<div>
+<input type="button" value="Sign Up" onclick="signup()"/>
+</div>
+</div>
+<script>
+function signup()
+{
+var userdetails={};
+var user = document.getElementById("username").value;
+var pass = document.getElementById("password").value;
+if(user=='' || pass=='')
+{
+	alert("please fill the details");
+}
+else{
+	if(localStorage.getItem("userdetails"))
+	{
+		var stored=localStorage.getItem("userdetails");
+		var parseddata=JSON.parse(stored);
+		parseddata[user]=pass;
+		localStorage.setItem("userdetails",JSON.stringify(parseddata));
+		alert("Registered");
+		location.href="login.html";
+	}
+	else
+	{
+		userdetails[user]=pass;
+		localStorage.setItem("userdetails",JSON.stringify(userdetails));
+		alert("Registered");
+		location.href="login.html";
+	}
+}
+}
+</script>
+</body>
+</html>
