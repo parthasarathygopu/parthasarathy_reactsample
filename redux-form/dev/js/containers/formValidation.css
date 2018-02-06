@@ -1,0 +1,14 @@
+form
+{
+    padding:20px;
+    border:1px solid black;
+}
+label{
+    display:inline-block;
+    margin:10px;
+}
+.fieldname
+{
+    display:inline-block;
+    margin-left:50px; 
+}
