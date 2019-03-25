@@ -1,0 +1,13 @@
+.main-css
+{
+  text-align: center;
+}
+.center{
+  text-align: center;
+  vertical-align: center;
+  margin:40px;
+}
+.displayNone
+{
+  display:none;
+}
